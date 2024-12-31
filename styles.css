@@ -1,0 +1,87 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efeaea;
+    color: #333;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Card Section */
+.description-card {
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: #e8e3e3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Gallery Section */
+.scroll-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images horizontally */
+    gap: 30px; /* Space between containers */
+    padding: 20px;
+    background-color: #e3dede;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Individual Image Container */
+.image-container {
+    text-align: center; /* Center text below the image */
+    max-width: 450px; /* Optional: Set a max width for the image container */
+}
+
+/* Gallery Image */
+.gallery-image {
+    width: 100%; /* Make the image take up the container's width */
+    max-width: 400px; /* Optional: Set a max width for the images */
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Description */
+.image-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 90%; /* Adjust image size for smaller screens */
+    }
+
+    .image-container {
+        max-width: 90%; /* Adjust container size for smaller screens */
+    }
+}
